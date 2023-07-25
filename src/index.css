@@ -18,7 +18,7 @@ code {
 }
 
 body{
-  min-height: 100vh;
+  min-height: 99vh;
   background:linear-gradient(lightblue,pink,white);
 }
 .navbar{
@@ -29,6 +29,17 @@ body{
 .element{
   text-decoration: none;
   color: white;
-  padding:106px;
+  padding:160px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.element:hover{
+  color:pink;
+}
+table{
+  border:none;
+  background-color: white;
+}
+.home{
+  margin:46px;
 }

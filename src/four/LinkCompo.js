@@ -5,8 +5,8 @@ import {Link} from 'react-router-dom'
   return (
     <div className='navbar'>
       <Link to='/' className='element'>Home</Link>
-      <Link to='/student'className='element'>Student</Link>
-      <Link to='/contact'className='element'>Contact</Link>
+      <Link to='/student'className='element'>Students</Link>
+      <Link to='/contact'className='element'>Contact Us</Link>
     </div>
   )
 }
