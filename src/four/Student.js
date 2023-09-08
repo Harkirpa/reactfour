@@ -1,5 +1,7 @@
 import React, {useState}from 'react'
+import { Link ,useNavigate} from 'react-router-dom'
 function Student() {
+  const Navi=useNavigate()
   const [data]=useState([
     {
     Name:"John",
@@ -48,6 +50,7 @@ return (
   <div>
    
     <h1 className='home'>Student Details</h1>
+    <button className='btn' onClick={()=>Navi('/addnewstudent')}>Add New Student</button>
     <br/>
     <br/>
     <center>
@@ -68,7 +71,7 @@ return (
                       <td>{item.Age}</td>
                       <td>{item.Course}</td>
                       <td>{item.Batch}</td>
-                      <td>{item.Change}</td>
+                      <td><Link className='link' state={{data:index}} to='/editstudent'>Edit</Link></td>
                   </tr>
               )
           }
